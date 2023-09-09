@@ -9,3 +9,9 @@ Post.create!(
   title: 'seedでいれたデータ',
   body: '初期データの本文',
 )
+2.times do |n|
+  Post.create!(
+    title: "seedでいれたデータ#{n+1}",
+    body: "初期データの本文#{n+1}",
+  )
+end
